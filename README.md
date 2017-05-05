@@ -31,7 +31,7 @@ private ArrayList<String> getCountryList() {
     }
 ```
 
-As it returns all available countries locales present in `Locale.class`, by alphabetic order (Even if there's special characters in the name, such as \`\'\^\~). Everything else are extras!
+As it returns all available countries locales present in `Locale.class`, by alphabetic order (Even if there's special characters in the name, such as \`\'\^\~). Also, translations of the country names are handle by your current Android's OS Language automatically.
 
 ## Screenshots
 ![Country Picker SS](gh_country_chooser.png)
