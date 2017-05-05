@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Android Country Picker</string>
+    <string name="activity_profile_dialog_country">Change Country</string>
+    <string name="interface_cancel">Cancel</string>
+    <string name="interface_confirm">Confirm</string>
+    <string name="main_activity_choose_contry_bt">Choose a Country</string>
 </resources>
