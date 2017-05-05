@@ -1,6 +1,8 @@
 # Android Country Picker
 Make a country picker without any external libraries! This project was based on some references from Stackoverflow and tiding up in a nice, easy to use, project.
 
+![Country Picker SS](gh_country_chooser.png)
+
 ## How it works
 The "heart" of this project is the function `getCountryList()` in the `CountryPickerView.java`:
 
@@ -32,9 +34,6 @@ private ArrayList<String> getCountryList() {
 ```
 
 As it returns all available countries locales present in `Locale.class`, by alphabetic order (Even if there's special characters in the name, such as \`\'\^\~). Also, translations of the country names are handle by your current Android's OS Language automatically.
-
-## Screenshots
-![Country Picker SS](gh_country_chooser.png)
 
 ## Contribute
 Feel free to improve the existing code and leave a star if you found this project usefull!
