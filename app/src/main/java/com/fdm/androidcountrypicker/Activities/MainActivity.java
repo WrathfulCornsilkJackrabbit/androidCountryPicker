@@ -14,6 +14,7 @@ import com.fdm.androidcountrypicker.Views.CountryPickerView;
 
 import java.util.HashMap;
 
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button mButtonChooseCountry;
@@ -23,7 +24,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         setupUI();
         setupListeners();
     }
@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void setupUI() {
         setContentView(R.layout.activity_main);
 
-        mButtonChooseCountry = (Button) findViewById(R.id.choose_country_bt);
-        mTextChosenCountry = (TextView) findViewById(R.id.chosen_country_tv);
+        mButtonChooseCountry = findViewById(R.id.choose_country_bt);
+        mTextChosenCountry = findViewById(R.id.chosen_country_tv);
     }
 
     private void setupListeners() {
@@ -57,11 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         mTextChosenCountry.setText(resultValue);
                     }
                 })
-                .setNegativeButton(R.string.interface_cancel, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-
-                    }
-                });
+                .setNegativeButton(R.string.interface_cancel, null);
         builder.create().show();
     }
 

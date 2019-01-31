@@ -18,9 +18,6 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Locale;
 
-/**
- * Created by foxdarkmaster on 04-05-2017.
- */
 
 public class CountryPickerView extends LinearLayoutCompat implements
         IBaseHandler,
@@ -50,7 +47,7 @@ public class CountryPickerView extends LinearLayoutCompat implements
     public void setupUI() {
         LayoutInflater inflater = LayoutInflater.from(getContext());
         mView = inflater.inflate(R.layout.layout_country_change_dialog, this, true);
-        mCountryRecycler = (RecyclerView) mView.findViewById(R.id.country_change_rv);
+        mCountryRecycler = mView.findViewById(R.id.country_change_rv);
     }
 
     @Override
